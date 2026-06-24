@@ -21,6 +21,7 @@ class QueueWaitingSection extends ConsumerWidget {
         final queue = queues[index];
 
         return Card(
+          color: Colors.orangeAccent,
           child: Padding(
             padding: EdgeInsets.all(24),
             child: Row(

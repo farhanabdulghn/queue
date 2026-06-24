@@ -21,6 +21,7 @@ class QueueDoneSection extends ConsumerWidget {
         final queue = queues[index];
 
         return Card(
+          color: Colors.blue,
           child: Padding(
             padding: EdgeInsets.all(24),
             child: Row(
