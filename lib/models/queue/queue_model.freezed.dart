@@ -15,7 +15,7 @@ T _$identity<T>(T value) => value;
 /// @nodoc
 mixin _$QueueModel {
 
- int? get id; String? get name; QueueType? get type;
+ int get id; String get name; QueueType get type;
 /// Create a copy of QueueModel
 /// with the given fields replaced by the non-null parameter values.
 @JsonKey(includeFromJson: false, includeToJson: false)
@@ -48,7 +48,7 @@ abstract mixin class $QueueModelCopyWith<$Res>  {
   factory $QueueModelCopyWith(QueueModel value, $Res Function(QueueModel) _then) = _$QueueModelCopyWithImpl;
 @useResult
 $Res call({
- int? id, String? name, QueueType? type
+ int id, String name, QueueType type
 });
 
 
@@ -65,12 +65,12 @@ class _$QueueModelCopyWithImpl<$Res>
 
 /// Create a copy of QueueModel
 /// with the given fields replaced by the non-null parameter values.
-@pragma('vm:prefer-inline') @override $Res call({Object? id = freezed,Object? name = freezed,Object? type = freezed,}) {
+@pragma('vm:prefer-inline') @override $Res call({Object? id = null,Object? name = null,Object? type = null,}) {
   return _then(_self.copyWith(
-id: freezed == id ? _self.id : id // ignore: cast_nullable_to_non_nullable
-as int?,name: freezed == name ? _self.name : name // ignore: cast_nullable_to_non_nullable
-as String?,type: freezed == type ? _self.type : type // ignore: cast_nullable_to_non_nullable
-as QueueType?,
+id: null == id ? _self.id : id // ignore: cast_nullable_to_non_nullable
+as int,name: null == name ? _self.name : name // ignore: cast_nullable_to_non_nullable
+as String,type: null == type ? _self.type : type // ignore: cast_nullable_to_non_nullable
+as QueueType,
   ));
 }
 
@@ -155,7 +155,7 @@ return $default(_that);case _:
 /// }
 /// ```
 
-@optionalTypeArgs TResult maybeWhen<TResult extends Object?>(TResult Function( int? id,  String? name,  QueueType? type)?  $default,{required TResult orElse(),}) {final _that = this;
+@optionalTypeArgs TResult maybeWhen<TResult extends Object?>(TResult Function( int id,  String name,  QueueType type)?  $default,{required TResult orElse(),}) {final _that = this;
 switch (_that) {
 case _QueueModel() when $default != null:
 return $default(_that.id,_that.name,_that.type);case _:
@@ -176,7 +176,7 @@ return $default(_that.id,_that.name,_that.type);case _:
 /// }
 /// ```
 
-@optionalTypeArgs TResult when<TResult extends Object?>(TResult Function( int? id,  String? name,  QueueType? type)  $default,) {final _that = this;
+@optionalTypeArgs TResult when<TResult extends Object?>(TResult Function( int id,  String name,  QueueType type)  $default,) {final _that = this;
 switch (_that) {
 case _QueueModel():
 return $default(_that.id,_that.name,_that.type);case _:
@@ -196,7 +196,7 @@ return $default(_that.id,_that.name,_that.type);case _:
 /// }
 /// ```
 
-@optionalTypeArgs TResult? whenOrNull<TResult extends Object?>(TResult? Function( int? id,  String? name,  QueueType? type)?  $default,) {final _that = this;
+@optionalTypeArgs TResult? whenOrNull<TResult extends Object?>(TResult? Function( int id,  String name,  QueueType type)?  $default,) {final _that = this;
 switch (_that) {
 case _QueueModel() when $default != null:
 return $default(_that.id,_that.name,_that.type);case _:
@@ -211,12 +211,12 @@ return $default(_that.id,_that.name,_that.type);case _:
 @JsonSerializable()
 
 class _QueueModel implements QueueModel {
-  const _QueueModel({this.id, this.name, this.type});
+  const _QueueModel({required this.id, required this.name, required this.type});
   factory _QueueModel.fromJson(Map<String, dynamic> json) => _$QueueModelFromJson(json);
 
-@override final  int? id;
-@override final  String? name;
-@override final  QueueType? type;
+@override final  int id;
+@override final  String name;
+@override final  QueueType type;
 
 /// Create a copy of QueueModel
 /// with the given fields replaced by the non-null parameter values.
@@ -251,7 +251,7 @@ abstract mixin class _$QueueModelCopyWith<$Res> implements $QueueModelCopyWith<$
   factory _$QueueModelCopyWith(_QueueModel value, $Res Function(_QueueModel) _then) = __$QueueModelCopyWithImpl;
 @override @useResult
 $Res call({
- int? id, String? name, QueueType? type
+ int id, String name, QueueType type
 });
 
 
@@ -268,12 +268,12 @@ class __$QueueModelCopyWithImpl<$Res>
 
 /// Create a copy of QueueModel
 /// with the given fields replaced by the non-null parameter values.
-@override @pragma('vm:prefer-inline') $Res call({Object? id = freezed,Object? name = freezed,Object? type = freezed,}) {
+@override @pragma('vm:prefer-inline') $Res call({Object? id = null,Object? name = null,Object? type = null,}) {
   return _then(_QueueModel(
-id: freezed == id ? _self.id : id // ignore: cast_nullable_to_non_nullable
-as int?,name: freezed == name ? _self.name : name // ignore: cast_nullable_to_non_nullable
-as String?,type: freezed == type ? _self.type : type // ignore: cast_nullable_to_non_nullable
-as QueueType?,
+id: null == id ? _self.id : id // ignore: cast_nullable_to_non_nullable
+as int,name: null == name ? _self.name : name // ignore: cast_nullable_to_non_nullable
+as String,type: null == type ? _self.type : type // ignore: cast_nullable_to_non_nullable
+as QueueType,
   ));
 }
 

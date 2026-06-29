@@ -6,8 +6,11 @@ part 'queue_model.g.dart';
 
 @freezed
 abstract class QueueModel with _$QueueModel {
-  const factory QueueModel({int? id, String? name, QueueType? type}) =
-      _QueueModel;
+  const factory QueueModel({
+    required int id,
+    required String name,
+    required QueueType type,
+  }) = _QueueModel;
 
   factory QueueModel.fromJson(Map<String, dynamic> json) =>
       _$QueueModelFromJson(json);
